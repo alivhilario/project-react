@@ -4,11 +4,7 @@ import "./index.css";
 const Cards = ({ product_name, image }) => {
   return (
     <div className="card">
-      <div>
-        <h4>{product_name}</h4>
-      </div>
-
-      <div>
+      <div className="cardImage">
         {/* conditional rendering⚠️ */}
         {image === undefined ? (
           <div>
@@ -19,6 +15,9 @@ const Cards = ({ product_name, image }) => {
             <img src={image} alt="" />
           </div>
         )}
+      </div>
+      <div className="title">
+        <h4>{product_name}</h4>
       </div>
     </div>
   );
