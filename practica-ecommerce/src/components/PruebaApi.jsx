@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import './PruebaApi.css'
+import Cards from "./card";
 
 const pruebaApi = () => {
   const BASE_URL = "https://ecomerce-master.herokuapp.com/api/v1/item";
@@ -15,27 +15,14 @@ const pruebaApi = () => {
   }, []);
 
   return (
-    <div className="body-card">
+    <div>
       {itemArray.map((item, index) => {
         return (
-          <div key={index}>
-            <div>
-              <h4>{item.product_name}</h4>
-            </div>
-
-            <div>
-              {/* conditional rendering⚠️ */}
-              {item.image === undefined ? (
-                <div>
-                  <h4>There is no image</h4>
-                </div>
-              ) : (
-                <div>
-                  <img src={item.image} alt="" />
-                </div>
-              )}
-            </div>
-          </div>
+          <Cards
+            key={index}
+            product_name={item.product_name}
+            image={item.image}
+          />
         );
       })}
     </div>
