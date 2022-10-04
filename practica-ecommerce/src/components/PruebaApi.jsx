@@ -13,12 +13,6 @@ const pruebaApi = () => {
       .catch((error) => console.log(`error api ${error}`));
   }, []);
 
-<<<<<<< HEAD
-  return;
-  <>
-    <div>pruebaApi</div>;
-  </>;
-=======
   return <div>pruebaApi
     <ul>
     {itemArray.map((item, index) =>{
@@ -28,7 +22,6 @@ const pruebaApi = () => {
     })}
     </ul>
   </div>;
->>>>>>> 49b4a16b66bba51d22cb2665dc8d0f82abda9a7f
 };
 
 export default pruebaApi;
