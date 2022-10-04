@@ -17,23 +17,24 @@ const pruebaApi = () => {
     <div>
       {itemArray.map((item, index) => {
         return (
-          <>
+          <div key={index}>
             <div>
               <h4>{item.product_name}</h4>
             </div>
+
             <div>
               {/* conditional rendering⚠️ */}
-              {itemArray.image === true ? (
-                <div key={index}>
-                  <img src={item.image} alt="" />
-                </div>
-              ) : (
+              {item.image === undefined ? (
                 <div>
                   <h4>There is no image</h4>
                 </div>
+              ) : (
+                <div>
+                  <img src={item.image} alt="" />
+                </div>
               )}
             </div>
-          </>
+          </div>
         );
       })}
     </div>
