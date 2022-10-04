@@ -13,19 +13,31 @@ const pruebaApi = () => {
       .catch((error) => console.log(`error api ${error}`));
   }, []);
 
-  return <div>pruebaApi
-    <ul>
+  return (
+    <div>
       {itemArray.map((item, index) => {
-        return <li key={index}>
-          <p> {item.product_name}</p>
-          
-          <img src={item.image} alt="" />
-        </li>
-
-
+        return (
+          <>
+            <div>
+              <h4>{item.product_name}</h4>
+            </div>
+            <div>
+              {/* conditional rendering⚠️ */}
+              {itemArray.image === true ? (
+                <div key={index}>
+                  <img src={item.image} alt="" />
+                </div>
+              ) : (
+                <div>
+                  <h4>There is no image</h4>
+                </div>
+              )}
+            </div>
+          </>
+        );
       })}
-    </ul>
-  </div>;
+    </div>
+  );
 };
 
 export default pruebaApi;
