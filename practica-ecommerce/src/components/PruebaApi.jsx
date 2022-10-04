@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import './PruebaApi.css'
 
 const pruebaApi = () => {
   const BASE_URL = "https://ecomerce-master.herokuapp.com/api/v1/item";
@@ -14,7 +15,7 @@ const pruebaApi = () => {
   }, []);
 
   return (
-    <div>
+    <div className="body-card">
       {itemArray.map((item, index) => {
         return (
           <div key={index}>

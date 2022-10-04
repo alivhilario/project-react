@@ -1,0 +1,17 @@
+.body-card{
+    width: 30%;
+    height: 400px;
+    border: 2px solid indianred;
+    background-color: aqua;
+}
+.img{
+    
+}
+
+ul {
+    color: rgb(6, 68, 130);
+    background-color: rgb(211, 243, 243);
+}
+li{
+    font-family: 'Open Sans', sans-serif;
+}
