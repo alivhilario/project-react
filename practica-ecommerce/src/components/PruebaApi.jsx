@@ -15,11 +15,15 @@ const pruebaApi = () => {
 
   return <div>pruebaApi
     <ul>
-    {itemArray.map((item, index) =>{
-      return <li key ={index}>
-        {item.product_name}
-      </li>
-    })}
+      {itemArray.map((item, index) => {
+        return <li key={index}>
+          <p> {item.product_name}</p>
+          
+          <img src={item.image} alt="" />
+        </li>
+
+
+      })}
     </ul>
   </div>;
 };
