@@ -11,7 +11,10 @@ const pruebaApi = () => {
       .catch((error) => console.log(`error api ${error}`));
   }, []);
 
-  return <div>pruebaApi</div>;
+  return;
+  <>
+    <div>pruebaApi</div>;
+  </>;
 };
 
 export default pruebaApi;
