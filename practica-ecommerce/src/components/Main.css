@@ -1,6 +1,6 @@
 div {
   width: 100%;
-  background-color: rgb(226, 7, 117);
+  background-color: rgba(250, 244, 235, 0.908);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
