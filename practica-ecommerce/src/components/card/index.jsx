@@ -1,18 +1,21 @@
 import React from "react";
 import "./index.css";
 
-const Cards = ({ product_name, image }) => {
+const Cards = ({ product_name, image, images, details }) => {
   return (
-    <div className="card">
+    <div className="card" onClick={() => details(product_name)}>
       <div className="cardImage">
         {/* conditional rendering⚠️ */}
-        {image === undefined ? (
+        {image === undefined && images === undefined ? (
           <div>
-            <h4>There is no image</h4>
+            <img
+              src="https://nypost.com/wp-content/uploads/sites/2/2022/03/Best-Amazon-Products.jpg?quality=75strip=all"
+              alt=""
+            />
           </div>
         ) : (
           <div>
-            <img src={image} alt="" />
+            <img src={images || image} alt="" />
           </div>
         )}
       </div>

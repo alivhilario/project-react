@@ -1,0 +1,8 @@
+div {
+  width: 100%;
+  background-color: rgb(226, 7, 117);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
