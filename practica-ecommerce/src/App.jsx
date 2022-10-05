@@ -1,14 +1,17 @@
-import { useState } from "react";
 import Main from "./components/Main";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import CarRoute from "./components/CarRoute";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h3>prueba de api</h3>
-      <Main />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={Main} />
+        <Route path="/card:/id" children={<CarRoute />} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

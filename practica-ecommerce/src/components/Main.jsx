@@ -7,6 +7,7 @@ const pruebaApi = () => {
   const BASE_URL = "https://ecomerce-master.herokuapp.com/api/v1/item";
 
   const [itemArray, setItemArray] = useState([]);
+  // const [productsIndex, setProductsIndex] = useState(undefined);
 
   useEffect(() => {
     axios
