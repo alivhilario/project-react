@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
 
-const Cards = ({ product_name, image, images, id }) => {
+const Card = ({ product_name, image, images, id }) => {
   const navigate = useNavigate();
   const gettingProducts = (e) => {
     e.preventDefault();
@@ -29,4 +29,4 @@ const Cards = ({ product_name, image, images, id }) => {
   );
 };
 
-export default Cards;
+export default Card;

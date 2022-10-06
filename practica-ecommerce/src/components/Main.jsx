@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Cards from "./card";
+import Card from "./card";
 import "./Main.css";
 import NavBarExample from "./Navbar";
 
@@ -22,7 +22,7 @@ const pruebaApi = () => {
       <section className="products">
         {itemArray.map((item, index) => {
           return (
-            <Cards
+            <Card
               id={item._id}
               key={index}
               product_name={item.product_name}
