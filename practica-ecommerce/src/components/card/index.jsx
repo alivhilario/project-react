@@ -12,16 +12,15 @@ const Cards = ({ product_name, image, images, id }) => {
     <div className="cardPrincipal" onClick={gettingProducts}>
       <div className="cardImage">
         {/* conditional rendering⚠️ */}
-        <div>
-          <img
-            src={
-              images ||
-              image ||
-              "https://nypost.com/wp-content/uploads/sites/2/2022/03/Best-Amazon-Products.jpg?quality=75strip=all"
-            }
-            alt=""
-          />
-        </div>
+
+        <img
+          src={
+            images ||
+            image ||
+            "https://nypost.com/wp-content/uploads/sites/2/2022/03/Best-Amazon-Products.jpg?quality=75strip=all"
+          }
+          alt=""
+        />
       </div>
       <div className="title">
         <h4 className="h4Title">{product_name}</h4>

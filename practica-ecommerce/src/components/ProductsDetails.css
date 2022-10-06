@@ -1,0 +1,56 @@
+.cardOne {
+  background-color: rgb(248, 240, 233);
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+}
+.cardContainer {
+  width: 40%;
+  background-color: rgb(255, 171, 115);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 350px;
+  height: 345px;
+}
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.text {
+  width: 47%;
+  margin: 0 auto;
+  padding: 48px 0px;
+}
+.text h2 {
+  margin-bottom: 45px;
+  font-size: 55px;
+}
+.text h4 {
+  margin-bottom: 17px;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 35px;
+}
+.buyButton {
+  background-color: #f47a17;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 2rem;
+  width: 300px;
+}
+
+.precio {
+  font-size: 3rem;
+  margin-top: 15px;
+  text-align: left;
+  color: #f47a17;
+}
+span {
+  font-weight: 400;
+}
