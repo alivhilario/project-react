@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
 
+
 const Cards = ({ product_name, image, images, id }) => {
   const navigate = useNavigate();
   const gettingProducts = (e) => {

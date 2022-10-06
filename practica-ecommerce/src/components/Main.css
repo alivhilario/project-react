@@ -1,21 +1,29 @@
+
 .nav-Principal {
   display: flex;
   flex-direction: column;
 }
 
 .products {
-  width: 100%;
-  /* background-color: rgba(250, 244, 235, 0.908); */
-  background-color: rgba(247, 239, 231, 0.908);
+  font-family:Arial, Helvetica, sans-serif;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(247, 239, 231, 0.908);
   justify-content: space-around;
   margin-bottom: 15px;
+}
+
+.products hover {
+  transform: scale(1.1);
+  box-shadow: 13px 15px 37px black;
+
+}
 
   /* color: #fff;
   text-shadow: 3px 3px rgba(50,50,70,0.5);
   background-color: #ffb6b9b0;
   height: 100vh; */
-}
 
 

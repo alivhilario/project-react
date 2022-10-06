@@ -16,10 +16,11 @@ const pruebaApi = () => {
       .catch((error) => console.log(`error api ${error}`));
   }, []);
 
+
   return (
     <div className="nav-Principal">
       <NavBarExample />
-      <section className="products">
+      <section className="products">          
         {itemArray.map((item, index) => {
           return (
             <Cards
@@ -37,3 +38,11 @@ const pruebaApi = () => {
 };
 
 export default pruebaApi;
+
+
+// export function Car (props){
+//   return (
+//     <div className = _"Aqui la clase de boostrap"
+//     </div>
+//   );
+// }
