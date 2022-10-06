@@ -1,18 +1,22 @@
 import React from "react";
 
-const ProductsDetails = ({}) => {
+const ProductsDetails = ({ item }) => {
   return (
     <div>
       <div>
-        <img src="" alt="" />
+        <img
+          src={
+            item.image ||
+            item.images ||
+            "https://nypost.com/wp-content/uploads/sites/2/2022/03/Best-Amazon-Products.jpg?quality=75strip=all"
+          }
+          alt=""
+        />
       </div>
-      <h4>Detalles del producto 🛒</h4>
-      <p> Nombre: </p>
-      <p>Precio </p>
-      <p>Descripción: </p>
-      <p>Categoría </p>
-      <p>Marca </p>
-      <button> Atrás</button>
+      <h4>Name {item.product_name} 🛒</h4>
+      <h4>Decrption {item.description} 🛒</h4>
+      <h4>Price {item.price} 🛒</h4>
+      <h4>Category {item.category} 🛒</h4>
     </div>
   );
 };

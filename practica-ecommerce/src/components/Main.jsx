@@ -8,7 +8,6 @@ const pruebaApi = () => {
   const BASE_URL = "https://ecomerce-master.herokuapp.com/api/v1/item";
 
   const [itemArray, setItemArray] = useState([]);
-  // const [productsIndex, setProductsIndex] = useState(undefined);
 
   useEffect(() => {
     axios
@@ -24,12 +23,11 @@ const pruebaApi = () => {
         {itemArray.map((item, index) => {
           return (
             <Cards
-              id={index}
+              id={item._id}
               key={index}
               product_name={item.product_name}
               image={item.image}
               images={item.images}
-              details={(product_name) => console.log(product_name)}
             />
           );
         })}
