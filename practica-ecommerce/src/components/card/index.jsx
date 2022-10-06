@@ -2,13 +2,14 @@ import React from "react";
 import "./index.css";
 import { useHistory } from "react-router-dom";
 
-const Cards = ({ product_name, image, images, details }) => {
+const Cards = ({ product_name, image, images, details, id }) => {
   const location = useHistory();
-  const gettingProducts = () => {
-    location.push(`/card:${product_name}`);
+  const gettingProducts = (e) => {
+    e.preventDefault();
+    location.push(`/card`);
   };
   return (
-    <div className="cardPrincipal" onClick={() => gettingProducts()}>
+    <div className="cardPrincipal" onClick={gettingProducts}>
       <div className="cardImage">
         {/* conditional rendering⚠️ */}
         {image === undefined && images === undefined ? (

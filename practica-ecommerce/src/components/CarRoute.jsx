@@ -1,10 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
-function CarRoute() {
-  const { id } = useParams;
-  console.log(id);
+function CarRoute({ match }) {
+  console.log(match);
   return <div>CarRoute</div>;
 }
 
-export default CarRoute;
+export default withRouter(CarRoute);
