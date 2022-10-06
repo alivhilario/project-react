@@ -25,7 +25,7 @@ const Cards = ({ product_name, image, images, details }) => {
         )}
       </div>
       <div className="title">
-        <h4>{product_name}</h4>
+        <h4 className="h4Title">{product_name}</h4>
       </div>
     </div>
   );
