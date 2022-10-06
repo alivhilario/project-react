@@ -29,7 +29,7 @@ const pruebaApi = () => {
               product_name={item.product_name}
               image={item.image}
               images={item.images}
-              details={(product_name) => console.log(product_name)}
+              // details={(product_name) => console.log(product_name)}
             />
           );
         })}

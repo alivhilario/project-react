@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { useHistory } from "react-router-dom";
 
-const Cards = ({ product_name, image, images, details, id }) => {
+const Cards = ({ product_name, image, images,id }) => {
   const location = useHistory();
   const gettingProducts = (e) => {
     e.preventDefault();
