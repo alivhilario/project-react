@@ -18,7 +18,7 @@ const pruebaApi = () => {
   }, []);
 
   return (
-    <div className="main">
+    <div className="nav-Principal">
       <NavBarExample/>
       <section className="products">
         {itemArray.map((item, index) => {

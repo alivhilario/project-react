@@ -8,7 +8,7 @@ const Cards = ({ product_name, image, images, details }) => {
     location.push(`/card:${product_name}`);
   };
   return (
-    <div className="card" onClick={() => gettingProducts()}>
+    <div className="cardPrincipal" onClick={() => gettingProducts()}>
       <div className="cardImage">
         {/* conditional rendering⚠️ */}
         {image === undefined && images === undefined ? (
