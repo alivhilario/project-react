@@ -14,7 +14,7 @@ const NavBarExample = () => {
                             <Nav.Link as = {Link} to = '/'> Home</Nav.Link>
                             <Nav.Link as = {Link} to = '/About'>About</Nav.Link>
                             <Nav.Link as = {Link} to = '/Contact'>Contact</Nav.Link>     
-                            <InputGroup>
+                            <InputGroup >
                                 <Form.Control placeholder="Search" />
                             </InputGroup>           
                         </Nav>
@@ -32,7 +32,7 @@ export default NavBarExample
 
 const Logo = (props) => {
     return (
-        <div style={{ fontSize: "14px", fontWeight: "bold", color: "purple" }}>
+        <div style={{ fontSize: "2rem", fontWeight: "bold", color: "purple" }}>
             {props.children}
         </div>
     )
